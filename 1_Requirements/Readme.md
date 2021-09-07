@@ -14,26 +14,36 @@ Reguarding the cost of calculators, the price will go higher as new operations a
 Our system, ie calculator consists of a terminal that takes user inputs and commands accordingly. It then passes the data to another unit which calculates the user inputs according to the given commands. The results are then displayed on the calculator screen.
 
 ## SWOT ANALYSIS
+![SWOT](https://user-images.githubusercontent.com/61946877/132365468-c8dfbaab-a541-4f43-92e6-a17b25f76d24.png)
 
-4W's and 1'H
-Who:
-TBD
+## 4W's and 1'H
+- ### Who:
+          This project can be used by anyone who wants to calculate some mathematical operations.
 
-What:
-TBD
+- ### What:
+          The user will get accurate and fast answers to the operation they want to do.
 
-When:
-TBD
+- ### When:
+          This project can be used anytime, there is no restrictions or requirements. Whenever there is a need to calculate, a person can use this.
 
-Where:
-TBD
+- ### Where:
+          A user will need an IDE to use this project.
 
-How:
-TBD
+- ### How:
+          This project will be made in C languege with cross-platform support for both Windows OS and Linux using multifile approach.
 
-Detail requirements
-High Level Requirements:
---- TBD in Tabular Format -- ID | Description | Status (Implemented/Future)
+## Detail requirements
+### High Level Requirements:
 
-Low level Requirements:
---- TBD in Tabular Format -- ID | Description | Status (Implemented/Future)
+| ID |	Description	|	status|
+|---|---|---|
+|HLR_1|	Switching on and off|		Implemented|
+|HLR_2|	Taking input	|	Implemented|
+|HLR_3|	Giving output|		Implemented|
+
+### Low level Requirements:
+
+| ID |	Description	|	status|
+|---|---|---|
+|LLR_1-HLR_2|	Identifying which operation needs to be performed|		Implemented|
+|LLR_2-HLR_2|	Performing the mathematical operation	|	Implemented|
