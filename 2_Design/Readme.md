@@ -1,10 +1,12 @@
 # Design
 ## High Level Design
 - ### Structural Diagram:
-![Capture](https://user-images.githubusercontent.com/61946877/132428104-a85afdac-b628-45f7-a14c-b9a2b5cbcc1f.JPG)
+![structural uml](https://user-images.githubusercontent.com/61946877/132567941-4294d216-30ac-4ac7-8ba3-fe84323f51b9.png)
+
 
 - ### Behavioral Diagram:
-![Capture](https://user-images.githubusercontent.com/61946877/132428247-a56d8153-bc5c-427a-87ed-409ef6ba533d.JPG)
+![behavorial uml](https://user-images.githubusercontent.com/61946877/132569772-6cdc6c0b-b68c-427c-a019-5d9c6f720073.png)
+
 
 ## Low Level Design
 - ### Structural Diagram:
