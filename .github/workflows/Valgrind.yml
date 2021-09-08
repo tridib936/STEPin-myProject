@@ -11,14 +11,14 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    steps:
+        steps:
     - uses: actions/checkout@v2
     - name: apt install dependency
       run: |
         sudo apt-get -y install valgrind
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: make test
-      run: |
-        make test -C STEPin-myProject/3_Implementation
-        valgrind ./STEPin-myProject/build/a.exe
+      run: make -C 3_Implementation/ test
+    - name: Valgrid
+      run: valgrind ./build/a.exe
 
