@@ -171,7 +171,7 @@ double cosine(double array[])
 double tangent(double array[])
 {
     double Tan, x=array[0];
-    if(x>360)
+    while(x>360)
     {
         x=x-360;
     }
