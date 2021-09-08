@@ -10,8 +10,10 @@
 
 ## Low Level Design
 - ### Structural Diagram:
-![1_zTG6m2p8hG7MCE2r9OHlBA](https://user-images.githubusercontent.com/61946877/132428834-0c17ba3d-d53e-4c96-aeb0-e68ccb4b7532.png)
+![structural uml](https://user-images.githubusercontent.com/61946877/132573891-f0e5a5fa-6f95-49ed-95f0-bccbc53c7dc6.png)
+
 
 - ### Behavioral Diagram:
-![Capture](https://user-images.githubusercontent.com/61946877/132429387-56fe6273-7817-4c70-9990-7432d1750faf.JPG)
+![behavorial uml](https://user-images.githubusercontent.com/61946877/132573342-f88e993e-1c5c-42f3-85fc-f9778d5dd329.png)
+
 
