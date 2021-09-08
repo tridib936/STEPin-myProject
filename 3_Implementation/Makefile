@@ -1,41 +1,23 @@
-PROJECT_NAME = CALCULATOR
+PROJ_NAME = CALCULATOR
+SRC = main.c calculation.c test_calculation.c unity.c
 
-BUILD = build
+ifdef OS
+   RM = del /q
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
 
-SRC = main.c\
-src/calculation.c
+all:
+	gcc $(SRC) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
 
-TEST_SRC = src/calculation.c\
-test/test_calculation.c\
-unity/unity.c\
-
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
-
-INC	= -Iinc\
--Iunity\
-
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
-
-$(PROJECT_NAME):all
-
-.PHONY: run clean test doc all
-
-all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
-
-run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).out
-
-test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
-
-coverageCheck:$(BUILD)
-	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
+run: all
+	./$(call FixPath,$(PROJ_NAME).$(EXEC))
 
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
-
-$(BUILD):
-	mkdir build
+	$(RM) $(call FixPath,$(PROJ_NAME).$(EXEC))
